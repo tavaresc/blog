@@ -3,11 +3,12 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.5.1
 
-* System dependencies
+* System dependencies :
+** Ruby version 2.2.2 or later
+** Rails version 5.2.1 or later
 
 * Configuration
 
