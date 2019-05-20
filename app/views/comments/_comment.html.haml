@@ -1,0 +1,9 @@
+%p
+  %strong Commenter:
+  = comment.commenter
+%p
+  %strong Comment:
+  = comment.body
+%p
+  = link_to 'Destroy Comment', [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?' }
+  / <haml_loud> link_to &#39;Destroy Comment&#39;, article_comment_path(@article), method: :delete, data: { confirm: &#39;Are you sure?&#39; } </haml_loud>
