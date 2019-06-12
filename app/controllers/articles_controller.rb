@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-	http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+	#http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
 
 	def index
 		@articles = Article.all
@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
 		@article = Article.new(article_params)
 
 		if @article.save
-			redirect_to @article
+			redirect_to @article # redirection to the show action
 		else
 			render 'new'
 			# redirect_to action: "new"
