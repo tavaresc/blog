@@ -7,4 +7,9 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  module ArticlesHelper
+  	def link_to_article(article)
+  		link_to "#{article.title} #{article.text}", article
+  	end
+  end
 end
